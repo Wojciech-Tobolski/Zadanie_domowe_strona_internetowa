@@ -1,0 +1,24 @@
+body {
+    background-image: url("../images/disney.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    color: aliceblue;
+
+    margin:auto;
+  }
+#navbarNav {
+    font-family: "Waltograph", cursive;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#title {
+    
+    font-family: "Waltograph", cursive;
+    size: cover;
+    color: aliceblue;
+    padding: 30px;
+
+
+}
