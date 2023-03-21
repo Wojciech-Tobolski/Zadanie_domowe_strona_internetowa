@@ -1,11 +1,19 @@
+const images = ["../images/Allain.jpg", "../images/The_lion_king.jpg"];
 
-  
-function changeBackground() {
+// Pobierz element HTML, do którego chcesz dodać obrazy
+const imageContainer = document.getElementById("image-container");
 
-    const body = document.querySelector('body');
-    body.style.backgroundColor = getRandomColor();
-  }
-  
+// Przejdź przez listę obrazów i utwórz element <img> dla każdego z nich
+for (let i = 0; i < images.length; i++) {
+  const image = document.createElement("img");
+  image.src = images[i];
+
+  // Dodaj element <img> do elementu HTML
+  imageContainer.appendChild(image);
+}
+const firstImage = document.querySelector("#image-container img:first-child");
+
+
   function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
