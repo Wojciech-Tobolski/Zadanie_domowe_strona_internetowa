@@ -7,6 +7,13 @@ body {
 
     margin:auto;
   }
+.text{
+    padding: 100px; 
+}
+#button{
+    padding: 100px;
+}
+
 #navbarNav {
     font-family: "Waltograph", cursive;
     color: aliceblue;

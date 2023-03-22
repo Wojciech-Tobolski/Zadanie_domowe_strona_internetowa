@@ -1,0 +1,31 @@
+const images = ["../images/Alladin.jpg", "../images/The_lion_king.jpg","../images/Lady_and_the_Tramp.jpg"];
+
+// Pobierz element HTML, do którego chcesz dodać obrazy
+const imageContainer = document.getElementById("image-container");
+let currentIndex = 0;
+// Przejdź przez listę obrazów i utwórz element <img> dla każdego z nich
+for (let i = 0; i < images.length; i++) {
+  const image = document.createElement("img");
+  
+setTimeout(function(){
+  image.src = images[i];
+  image.onclick = function() {
+    console.log(`Kliknięto obraz ${i}`);
+    imageContainer.removeChild(image-container nth-child(1) );
+    imageContainer.removeChild(image);
+    // Wczytaj kolejny obraz z tablicy
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    const nextImage = document.createElement("img");
+    nextImage.src = images[currentIndex];
+    imageContainer.appendChild(nextImage);
+
+  };
+},i*1000);
+
+  // Dodaj element <img> do elementu HTML
+  imageContainer.appendChild(image);
+  
+}
