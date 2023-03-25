@@ -51,6 +51,13 @@ function Ready() {
       if (imagesList.length <= 2 && images.length > 0) {
         loadNextImages();
       }
+      else{
+        //imagesToRemove.remove();
+        imagesToRemove[0].remove();
+        imagesToRemove[1].remove();
+        imagesToRemove[2].remove();
+        imagesToRemove[3].remove();
+      }
     });
   }
 }
